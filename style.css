@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+header {
+    height: 400px;
+    background-image: url(images/header-bg.png);
+    background-position: center;
+}
+footer {
+    height: 200px;
+}
