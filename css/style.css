@@ -1,6 +1,9 @@
 * {
     box-sizing: border-box;
 }
+body {
+    min-width: 400px;
+}
 header {
     height: 400px;
     background-image: url(../images/header-bg.png);
@@ -11,9 +14,23 @@ footer {
 }
 menu {
     margin: 0px;
+    
+}
+@media (max-width: 993px) {
+    aside {
+        display: none;
+        position: absolute;
+        top: 400px;
+        right: 0px;
+        padding: 0px !important;
+        background-color: white !important;
+    }
+    aside.show-sidebar {
+        display: block;
+    }
 }
 .back-black-opacity {
-            background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 .fixed {
     position: fixed;
@@ -21,11 +38,5 @@ menu {
 @media (max-width: 1100px) {
     p {
         margin: 0px;
-    }
-}
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: hsl(0, 0%, 20%);
-        color: black !important;
     }
 }

@@ -3,10 +3,10 @@
  * @param {string} id id dropdown-элемента
  */
 function showDropdown(id) {
-    x = document.getElementById(id)
-    if (x.className.indexOf("w3-show") == -1) {
-      x.className += " w3-show";
-    } else { 
-      x.className = x.className.replace(" w3-show", "");
-    }
-  }
+  let x = document.getElementById(id);
+  x.classList.toggle("w3-show")
+}
+function showAside() {
+  let x = document.getElementsByTagName("aside")[0];
+  x.classList.toggle("show-sidebar");
+}
