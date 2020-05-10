@@ -24,6 +24,7 @@ menu {
         right: 0px;
         padding: 0px !important;
         background-color: white !important;
+        
     }
     aside.show-sidebar {
         display: block;
@@ -39,4 +40,7 @@ menu {
     p {
         margin: 0px;
     }
+}
+img {
+    min-width: 40px;
 }
