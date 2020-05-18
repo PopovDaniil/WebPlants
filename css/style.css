@@ -9,9 +9,6 @@ header {
     background-image: url(../images/header-bg.png);
     background-position: center;
 }
-footer {
-    height: 200px;
-}
 menu {
     margin: 0px;
     
@@ -24,6 +21,7 @@ menu {
         right: 0px;
         padding: 0px !important;
         background-color: white !important;
+        
     }
     aside.show-sidebar {
         display: block;
@@ -39,4 +37,13 @@ menu {
     p {
         margin: 0px;
     }
+}
+img {
+    min-width: 40px;
+}
+.logo {
+    height: 72px;
+}
+a {
+    text-decoration: none;
 }
