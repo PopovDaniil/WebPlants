@@ -46,8 +46,9 @@ img {
 a {
     text-decoration: none;
 }
-@media (max-width: 600px) {
-    img {
-        max-width: 300px;
-    }
+.padding-child *{
+    padding: 3px;
+}
+*[onclick] {
+    cursor: pointer;
 }

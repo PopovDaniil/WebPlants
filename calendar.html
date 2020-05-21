@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/w3-theme-green.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="main.js"></script>
+    <title>Plants</title>
+</head>
+
+<body>
+    <header class="w3-display-container w3-text-white">
+        <h1
+            class="w3-container w3-display-middle w3-center w3-xxxlarge back-black-opacity w3-text-theme w3-round-large">
+            <img src="images/logo.png" alt="" class="logo w3-margin">
+            <span style="vertical-align: text-top;">Энциклопедия растений</span>
+        </h1>
+    </header>
+    <menu class="w3-bar w3-theme-d2 w3-top">
+        <a href="index.html" class="w3-bar-item w3-button w3-hover-theme">Главная</a>
+        <div class="w3-dropdown-hover">
+            <a href="catalog.html" class="w3-button w3-hover-theme">Каталог</a>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4 fixed w3-theme-d2">
+                <a href="#" class="w3-bar-item w3-button w3-hover-theme">Научная классификация</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-theme">По жизненной форме</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-theme">По времени цветения</a>
+            </div>
+        </div>
+        <a href="" class="w3-bar-item w3-button w3-hover-theme">О нас</a>
+        <div class="w3-dropdown-click">
+            <a class="material-icons w3-button w3-hover-theme" onclick="showDropdown('search')">search</a>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4 fixed w3-theme-d2" id="search">
+                <input type="search" class="w3-bar-item" placeholder="Поиск по каталогу">
+            </div>
+        </div>
+        <a class="w3-button w3-hover-theme w3-display-right w3-hide-large" onclick="showAside()">Aside</a>
+    </menu>
+    <main class="w3-container w3-col l9 m12">
+        <div class="w3-section">
+            <section class="w3-card w3-padding w3-theme w3-container">
+                <h1 class="w3-center">Календарь цветения</h1>
+                <table class="w3-center w3-col l3 w3-large w3-margin padding-child">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td onclick="showTooltip('5')">5</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td onclick="showTooltip('12')">12</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td onclick="showTooltip('19')">19</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td onclick="showTooltip('26')">26</td>
+                    </tr>
+                    <tr>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+                <div id="tooltips" class="w3-margin w3-container w3-col l4">
+                    <div class="w3-card-4 w3-hide" id="t5">
+                        <img src="images/Polytrichum_commune-small.jpeg" style="width: 100%">
+                        <div class="w3-container w3-center w3-row w3-padding">
+                            <div class="w3-half">5 июня</div>
+                            <div class="w3-half">Тополь</div>
+                        </div>
+                    </div>
+                    <div class="w3-card-4 w3-hide" id="t12">
+                        <img src="images/Polytrichum_commune-small.jpeg" style="width: 100%">
+                        <div class="w3-container w3-center w3-row w3-padding">
+                            <div class="w3-half">12 июня</div>
+                            <div class="w3-half">Ива</div>
+                        </div>
+                    </div>
+                    <div class="w3-card-4 w3-hide" id="t19">
+                        <img src="images/Polytrichum_commune-small.jpeg" style="width: 100%">
+                        <div class="w3-container w3-center w3-row w3-padding">
+                            <div class="w3-half">19 июня</div>
+                            <div class="w3-half">Вяз</div>
+                        </div>
+                    </div>
+                    <div class="w3-card-4 w3-hide" id="t26">
+                        <img src="images/Polytrichum_commune-small.jpeg" style="width: 100%">
+                        <div class="w3-container w3-center w3-row w3-padding">
+                            <div class="w3-half">26 июня</div>
+                            <div class="w3-half">Липа</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <aside class="w3-container w3-col s6 m3 l3">
+        <div class="w3-card w3-section w3-theme">
+            <p class="w3-xlarge w3-center"><a href="calendar.html">Календарь цветения</a></p>
+            <ul class="w3-container w3-ul">
+                <li class="w3-row">
+                    <p class="w3-col l3 w3-text-indigo w3-large w3-center">5 июня</p>
+                    <p class="w3-col l6 w3-large w3-center">Тополь</p>
+                    <img src="images/Polytrichum_commune-small.jpeg" class="w3-col l3" alt="">
+                </li>
+                <li class="w3-row">
+                    <p class="w3-col l3 w3-text-indigo w3-large w3-center">12 июня</p>
+                    <p class="w3-col l6 w3-large w3-center">Ива</p>
+                    <img src="images/Polytrichum_commune-small.jpeg" class="w3-col l3" alt="">
+                </li>
+                <li class="w3-row">
+                    <p class="w3-col l3 w3-text-indigo w3-large w3-center">19 июня</p>
+                    <p class="w3-col l6 w3-large w3-center">Вяз</p>
+                    <img src="images/Polytrichum_commune-small.jpeg" class="w3-col l3" alt="">
+                </li>
+                <li class="w3-row">
+                    <p class="w3-col l3 w3-text-indigo w3-large w3-center">26 июня</p>
+                    <p class="w3-col l6 w3-large w3-center">Липа</p>
+                    <img src="images/Polytrichum_commune-small.jpeg" class="w3-col l3" alt="">
+                </li>
+            </ul>
+        </div>
+        <div class="w3-card w3-theme">
+            <p class="w3-xlarge w3-center">Новости ботанического сада</p>
+            <ul class="w3-container w3-ul">
+                <li class="w3-row w3-center">
+                    <a href="">Появилось 3 новых сорта роз</a>
+                </li>
+                <li class="w3-row w3-center">
+                    <a href="">Зацвёл редкий цветок</a>
+                </li>
+                <li class="w3-row w3-center">
+                    <a href="">Требуется помощь в уборке сада</a>
+                </li>
+                <li class="w3-row w3-center">
+                    <a href="">Открыт набор на курсы флористов</a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <footer class="w3-section w3-col w3-theme-d2 w3-display-container">
+        <nav class="w3-col l2 w3-bar-block w3-margin">
+            <a class="w3-block" href="index.html">Главная</a>
+            <a class="w3-block" href="catalog.html">Каталог</a>
+            <a class="w3-block w3-margin-left" href="">Научная классификация</a>
+            <a class="w3-block w3-margin-left" href="">По жизненной форме</a>
+            <a class="w3-block w3-margin-left" href="">По времени цветения</a>
+            <a class="w3-block" href="calendar.html">Календарь цветения</a>
+            <a class="w3-block" href="">Архив новостей</a>
+        </nav>
+        <div class="w3-col l9 w3-center w3-section">
+            <img src="images/foto.jpg" class="" alt="">
+            <p class="w3-text-light-gray">Сайт поддерживается и развивается Ростовским ботаническим садом • 2020 г.
+            </p>
+        </div>
+        <img src="images/logo.png" class="logo w3-display-right">
+    </footer>
+</body>
+
+</html>
