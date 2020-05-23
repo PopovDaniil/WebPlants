@@ -21,3 +21,11 @@ function showTooltip(id) {
   all.forEach(item => item.classList.remove("w3-show"))
   x.classList.add("w3-show");
 }
+
+function copy() {
+  let x = document.querySelector("#email");
+  navigator.clipboard.writeText("botsad-don@gmail.com");
+  let t = x.innerHTML;
+  x.innerHTML = "Адрес скопирован";
+  setTimeout(() => x.innerHTML = t,2000);
+}
